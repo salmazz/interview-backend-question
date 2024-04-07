@@ -3,19 +3,54 @@
 ## Questions and Answers
 
 ### Table of Contents
-1. [Question 1 Title](#question-1)
-2. [Question 2 Title](#question-2)
-[...]
+1. [Explain SOLID](#question-1)
+2. [Explain Abstraction](#question-2)
+3. [Explain Polymorphism concept in computer science](#question-3)
+4. [Explain Single Responsibility with examples](#question-4)
+5. [Explain Design Pattern](#question-5)
+6. [Design Pattern you know and used before](#question-6)
+7. [Explain Async, Sync](#question-7)
+8. [Proxy Servers](#question-8)
+9. [What are Multi-Tenant Servers](#question-9)
+10. [Why we need Tokens for authentication](#question-10)
+11. [Authentication vs Authorization](#question-11)
+12. [Monolith vs Microservices](#question-12)
+13. [What is a Load Balancer and its importance?](#question-13) *Suggested Question*
+
+## Database Questions
+### Table of Contents
+1. [Explain ACID concept](#question-14)
+2. [What is an ORM and when/why to use it](#question-15)
+3. [Database indexing (explain/when to use/tradeoffs)](#question-16)
+4. [What is a database view](#question-17)
+5. [Explain Database transaction](#question-18)
+6. [SQL vs NoSQL](#question-19)
+7. [Difference Between DELETE and TRUNCATE](#question-20)
+8. [What is a lock and why is it useful?](#question-21)
+9. [Explain Join in Database](#question-22)
+10. [Difference Between Cluster/Non-Cluster Index](#question-23)
+11. [What is Elasticsearch and when to use it and explain its tradeoffs](#question-24)
+12. [How does Database Normalization improve design?](#question-25) *Suggested Question*
+
+## Django & Python Questions
+### Table of Contents
+1. [Explain Django's MVT architecture](#question-26) *Suggested Question*
+2. [How does Python's GIL (Global Interpreter Lock) work?](#question-27) *Suggested Question*
+
+## PHP Laravel Questions
+### Table of Contents
+1. [Explain the Eloquent ORM in Laravel](#question-28) *Suggested Question*
+2. [What are Middlewares in Laravel?](#question-29) *Suggested Question*
 
 ### Q&A
 
 #### Question 1
-**Q: How do I install the project?** <a name="question-1"></a>
-A: You can install the project by...
+**Q: Explain SOLID principles.** <a name="question-1"></a>
+A: SOLID is an acronym for five design principles intended to make software designs more understandable, flexible, and maintainable...
 
 #### Question 2
-**Q: What are the system requirements?** <a name="question-2"></a>
-A: The system requirements are...
+**Q: Explain Abstraction.** <a name="question-2"></a>
+A: Abstraction in computer science is a method of reducing complexity and allowing efficient design and implementation in complex software systems...
 
 [...]
 
