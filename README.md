@@ -19,6 +19,11 @@
 13. [What is a Load Balancer and its importance?](#question-13)
 14. [How Can i enhancment the api and reduce api response time?]
 
+## OOP Questions  
+### Table of Contents
+1. [Explain Difference between interface and abstract](#question-14)
+
+
 ## Database Questions
 ### Table of Contents
 1. [Explain ACID concept](#question-14)
@@ -34,6 +39,7 @@
 11. [What is Elasticsearch and when to use it and explain its tradeoffs](#question-24)
 12. [How does Database Normalization improve design?](#question-25)
 13. [How can i enhancment the sql query?]
+14. [What is the innodb?]
 
 ## Git Questions
 ### Table of Contents
