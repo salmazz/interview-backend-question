@@ -250,6 +250,37 @@ The main difference is that `git fetch` can be considered a safe way to review c
 **Q: What is a Git tag, and why is it used?**  
 A: A Git tag is a marker that is used to point to a specific commit in the history of the repository. Tags are typically used to mark release points (v1.0, v2.0, etc.), indicating important milestones in the project’s development. Unlike branches, which may change over time as new commits are added, a tag always points to the same specific commit, making them ideal for referencing specific versions of the code. Tags can be created for both release and pre-release versions, and they do not change once created.
 
+
+## Django & Python Questions
+
+### Explain Django's MVT Architecture
+
+Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It follows the **MVT (Model-View-Template)** architecture, a variant of the commonly known MVC (Model-View-Controller) architecture. The MVT architecture is comprised of the following components:
+
+- **Model:** The model is the definitive source of information about your data. It contains the essential fields and behaviors of the data you’re storing. Django follows the DRY Principle. The goal is to define your data model in one place and automatically derive things from it.
+
+- **View:** The view acts as the bridge between the Model and the Templates. It controls what is shown to the user and how it is shown through querying the Model for data. Views in Django are more about the logic that gets processed on the data before being sent to the template.
+
+- **Template:** The template is a presentation layer which handles the user interface part completely. It defines how to display the information to be presented to the user, based on HTML.
+
+The flow of control in Django is as follows:
+1. Django receives a request from a user.
+2. It consults the URL dispatcher which forwards the request to a view function associated with the requested URL.
+3. The view queries the model for specific data and passes data to the template.
+4. The template renders the data in the format written in HTML, which is then served to the user's browser.
+
+### How does Python's GIL (Global Interpreter Lock) work?
+
+Python's **Global Interpreter Lock (GIL)** is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes at once. This lock is necessary because CPython's memory management is not thread-safe. The GIL allows only one thread to execute in the interpreter at any one time, which means Python’s multi-threading is not suitable for CPU-bound tasks that need to execute in parallel on multiple CPUs.
+
+Here's how it works:
+- When a thread wants to execute, it must wait to acquire the GIL.
+- Once a thread acquires the GIL, it can perform operations involving Python objects or call Python/C API functions.
+- After a fixed interval, the thread releases the GIL (voluntarily or when I/O operations are performed), allowing another thread to acquire it and execute.
+
+The presence of the GIL means that threads may be appropriate for I/O-bound tasks where the program spends most of its time waiting for external events. However, for CPU-bound tasks that require heavy computation and need to run in parallel, multiprocessing is generally a better approach than multi-threading.
+
+
 ## PHP & Laravel Answers 
 
 ### Explain the Eloquent ORM in Laravel <a name="explain-the-eloquent-orm-in-laravel"></a>
