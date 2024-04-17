@@ -33,6 +33,7 @@
 12. [How does Database Normalization improve design?](#how-does-database-normalization-improve-design)
 13. [How can I enhancement the SQL query?](#how-can-i-enhancement-the-sql-query)
 14. [What is the innodb?](#what-is-the-innodb)
+15. [Function vs stored procedure](#function-vs-stored-procedure)
 
 ## Git Questions
 ### Table of Contents
