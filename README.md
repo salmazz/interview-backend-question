@@ -16,6 +16,7 @@
 12. [Monolith vs Microservices](#monolith-vs-microservices)
 13. [What is a Load Balancer and its importance?](#what-is-a-load-balancer-and-its-importance)
 14. [How Can I enhance the API and reduce API response time?](#how-can-i-enhance-the-api-and-reduce-api-response-time)
+15. [Difference between proxy and reverse proxy](#difference-between-proxy-and-reverse-proxy)
 
 ## Database Questions
 ### Table of Contents
@@ -147,7 +148,39 @@ A: Enhancing API performance and reducing response times can be achieved through
 4. **Load Balancing:** Distribute incoming API requests across multiple servers to ensure no single server becomes a bottleneck.
 5. **Asynchronous Processing:** Handle tasks that are resource-intensive or time-consuming in an asynchronous manner.
 6. **Code Optimization:** Regularly profile and optimize your API’s codebase to remove bottlenecks.
-7. **Database:** Check Database Queries and enhancement it with several ways like define what i need to back in response , check joins and make normlization if it possible 
+7. **Database:** Check Database Queries and enhancement it with several ways like define what i need to back in response , check joins and make normlization if it possible
+
+### Difference between proxy and reverse proxy <a name="difference-between-proxy-and-reverse-proxy"></a>
+**Q: Difference between proxy and reverse proxy?**
+A: 
+Both proxy servers and reverse proxies are intermediaries that manage network traffic flow, but they serve different purposes:
+
+**Proxy Server**
+
+* **Position:** Sits in front of a client (like your computer).
+* **Function:** Routes client requests to other servers on the internet.
+* **Benefits:**
+    - Security: Filters traffic and blocks malicious requests.
+    - Caching: Stores frequently accessed resources to improve performance.
+    - Access control: Restricts user access to certain websites.
+    - Anonymity: Masks the client's IP address.
+
+**Reverse Proxy Server**
+
+* **Position:** Sits in front of one or more web servers.
+* **Function:** Receives client requests, forwards them to the appropriate web server(s), and returns the responses to the client.
+* **Benefits:**
+    - Load balancing: Distributes traffic evenly among multiple web servers for better performance and scalability.
+    - Security: Implements security measures like SSL termination and authentication.
+    - Caching: Caches frequently accessed resources to reduce load on web servers.
+
+Here's a table summarizing the key differences:
+
+| Feature        | Proxy Server               | Reverse Proxy Server  |
+|----------------|---------------------------|------------------------|
+| Position       | In front of client         | In front of web servers  |
+| Traffic flow   | Client -> Proxy -> Server   | Client -> Reverse Proxy -> Server |
+| Main purpose   | Security, caching, access control, anonymity | Load balancing, security, caching |
 
 
 ## Database Answers 
